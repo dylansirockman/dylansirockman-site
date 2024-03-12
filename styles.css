@@ -1,0 +1,81 @@
+/* Reset default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 20px; /* Add margin below the header */
+}
+
+p {
+    margin-top: 20px; /* Add margin above the paragraph */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0 20px 0; /* Adjust margin to accommodate the fixed navigation bar */
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between icons */
+}
+
+.icon-container a {
+    display: block;
+    width: 50px; /* Adjust the width of each icon */
+    height: 50px; /* Adjust the height of each icon */
+}
+
+.icon-container img {
+    width: 100%; /* Make the icon fill its container */
+    height: 100%; /* Make the icon fill its container */
+}
