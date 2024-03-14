@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font for the entire body */
+    font-family: 'Roboto', sans-serif; 
     background-color: #ffffff;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-image: url('background2.jpg'); /* Replace 'your-image-filename.jpg' with the filename of your image */
+    background-image: url('background2.jpg'); 
     background-size: cover;
     background-position: center;
     color: #fff;
