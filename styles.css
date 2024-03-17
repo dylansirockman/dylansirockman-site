@@ -60,7 +60,7 @@ h1 {
 }
 
 p {
-    font-size: 1.75em; /* Adjust the font size of the short line of text */
+    font-size: 1.75em; 
 }
 
 section {
@@ -185,4 +185,55 @@ form button {
 
 form button:hover {
     background-color: #555;
+}
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .top-left,
+    .top-right {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .top-left ul li,
+    .top-right ul li {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .top-left ul li:last-child,
+    .top-right ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .top-left ul li a img {
+        height: 40px;
+        width: 40px;
+    }
 }
