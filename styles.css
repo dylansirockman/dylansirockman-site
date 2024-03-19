@@ -74,7 +74,7 @@ h1 {
 }
 
 p {
-    font-size: 1.75em; 
+    font-size: 1.75em; /* Adjust the font size of the short line of text */
 }
 
 section {
@@ -150,7 +150,9 @@ form button:hover {
     background-color: #555;
 }
 
-/* for mobile */
+/* Media queries for responsive design */
+
+/* Media queries for responsive design */
 
 @media screen and (max-width: 768px) {
     .container {
@@ -192,8 +194,8 @@ form button:hover {
 
     .top-left ul li a img,
     .top-right ul li a img {
-        height: 50px;
-        width: 50px;
+        height: 30px;
+        width: 30px;
     }
 
     h1 {
@@ -202,5 +204,13 @@ form button:hover {
 
     p {
         font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    nav.top-left ul li a img,
+    nav.top-right ul li a img {
+        height: 40px; /* Adjust icon height for desktop */
+        width: 40px; /* Adjust icon width for desktop */
     }
 }
