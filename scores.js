@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Function to create a container for each league's games and return the container
     function createLeagueContainer(leagueName) {
         const leagueContainer = document.createElement('div');
-        leagueContainer.classList.add('container', 'mt-4'); // Correct way to add multiple classes
+        leagueContainer.classList.add('container', 'mt-4');
     
         const headerContainer = document.createElement('div');
         headerContainer.classList.add('d-flex', 'align-items-center'); // Flex container for header and logo
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         leagueContainer.appendChild(headerContainer); // Add the header and logo container to the league container
     
         const row = document.createElement('div');
-        row.className = 'row justify-content-start'; // Ensure games are aligned to the start
+        row.className = 'row justify-content-start'; 
         leagueContainer.appendChild(row);
     
         gamesContainer.appendChild(leagueContainer);
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         } else {
             games.forEach(game => {
                 const col = document.createElement('div');
-                col.className = 'col-12 col-sm-6 col-md-4'; // Responsive grid columns
+                col.className = 'col-12 col-sm-6 col-md-4';
                 const gameDiv = document.createElement('div');
                 gameDiv.classList.add('game-box', 'p-3', 'mb-3', 'shadow-sm');
                 gameDiv.onclick = () => window.location.href = `game-stats.html?gameId=${game.id}`;
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
     
 
-    // Load all games in a specified order
+    
     await fetchAndRenderGames(sportsLeagues.mlb, 'mlb');
     await fetchAndRenderGames(sportsLeagues.nba, 'nba');
     await fetchAndRenderGames(sportsLeagues.nhl, 'nhl');
